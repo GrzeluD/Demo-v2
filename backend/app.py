@@ -10,7 +10,7 @@ app = Flask(__name__)
 load_dotenv('.env')
 
 # Pobierz klucz uwierzytelniający z zmiennej środowiskowej
-vision_api_key = os.environ.get('VISION_API_KEY')
+vision_api_key = os.environ.get('GOOGLE_VISION_API_KEY')
 
 # Inicjalizacja klienta Vision API z uwzględnieniem klucza uwierzytelniającego
 credentials = service_account.Credentials.from_service_account_info(vision_api_key)
